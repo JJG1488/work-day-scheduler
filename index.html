@@ -10,6 +10,8 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <title>Work Day Scheduler</title>
 </head>
@@ -43,14 +45,34 @@
 
         <table style="width: 100%">
             <tr>
-                <th>Time</th>
-                <th>Calendar Event</th>
-                <th>Save</th>
+                <th>Schedule Your Event</th>
+                <th>Time Selected</th>
+                <th>Event To Be Logged</th>
+                <th>Save Your Event</th>
             </tr>
             <tr>
-                <td><input id="time-slot-1"></td>
-                <td><input type="text" id="calendar-event-1"></td>
-                <td><button type="button" id="html-event-text-input-1-save-button"></button></td>
+                <td>
+                    <div class="dropdown">
+                        <button id="time-button-1">Select event time</button>
+                        <div id="hour-dropdown" class="dropdown-content hide">
+                            <ul id="listOfTimes">
+                                <li><button id="nineToTen"> 9:00am - 10:00am</button></li>
+                                <li><button id="tenToEleven">10:00am - 11:00am</button></li>
+                                <li><button id="elevenToTwelve">11:00am - 12:00pm</button></li>
+                                <li><button id="twelveToOne">12:00pm - 1:00pm</button></li>
+                                <li><button id="oneToTwo">1:00pm - 2:00pm</button></li>
+                                <li><button id="twoToThree">2:00pm - 3:00pm</button></li>
+                                <li><button id="threeToFour">3:00pm - 4:00pm</button></li>
+                                <li><button id="fourToFive">4:00pm - 5:00pm</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <p id="time-selected"></p>
+                </td>
+                <td><input type="text" id="event-to-be-logged"></td>
+                <td><button type="button" id="event-save-button">Log Event</button></td>
             </tr>
 
 
@@ -62,15 +84,17 @@
 
     </div>
     <!-- --------------------------------------------- bottom of body ------------------------------------------------------ -->
-    <!-- inserted luxon.js file here -->
-    <script src="./luxon.min.js"></script>
 
-    <!-- inserted linked script.js file -->
-    <script src="./script.js"></script>
+    <!-- inserted moment.js -->
+    <script src="moment.js"></script>
+
+        <!-- inserted linked script.js file -->
+        <script src="./script.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
 </body>
 
 </html>

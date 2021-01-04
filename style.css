@@ -1,3 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.1s; }
+
 #html-h1 {
     text-align: center;
 }
+
+.hide {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.show {
+    display: inline;
+}
+
