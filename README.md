@@ -5,7 +5,7 @@
 ## Preview
 
 ![Preview](./workday-scheduler.png)
-![Link](<https://jjg1488.github.io/work-day-scheduler/>)
+[ClickHere](<https://jjg1488.github.io/work-day-scheduler/>)
 
 ## Description
 
