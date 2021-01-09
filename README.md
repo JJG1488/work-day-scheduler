@@ -2,7 +2,10 @@
 
 ---
 
-<!-- Preview with live url goes here -->
+## Preview
+
+![Preview](./workday-scheduler.png)
+![Link](https://jjg1488.github.io/work-day-scheduler/)
 
 ## Description
 
