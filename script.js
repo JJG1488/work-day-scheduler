@@ -123,11 +123,13 @@ $(document).ready(function () {
         if (rowHour) {
             // Compares row id to current hour and sets color accordingly
             if (currentHour === rowHour) {
-                setColor(row, "red");
+                setColor(row, "lightgrey");
+                // setColor(row, "red");
             } else if ((currentHour < rowHour) && (currentHour > rowHour - 6)) {
                 setColor(row, "green");
             } else if ((currentHour > rowHour) && (currentHour < rowHour + 6)) {
-                setColor(row, "lightgrey");
+                // setColor(row, "lightgrey");
+                setColor(row, "red");
             } else {
                 setColor(row, "white");
             }
